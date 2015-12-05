@@ -1,0 +1,14 @@
+<ion-view view-title="Sessions">
+  <ion-content>
+    <ion-list>
+      <a class='item advanced-background' ng-repeat="session in sessions" href="#/app/sessions/{{session.id}}">
+          <!-- <img src=''> -->
+          <p class='advanced-background-title'> {{session.title}}</p>
+          <p class='advanced-background-subtitle'>
+              {{session.date}}</br>
+              {{session.time}}
+          </p>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>
